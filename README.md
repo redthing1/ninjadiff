@@ -12,7 +12,10 @@ Copy the contents of this repository into your Binary Ninja plugin directory (`T
 
 The easiest way to do this is with `git clone --recursive …`, take care to ensure that the [Hashashin](https://github.com/riverloopsec/hashashin) sub-module get's pulled along with the rest of the repository, otherwise NinjaDiff will not function correctly. 
 
-
+You also need to install numpy into your Binja virtualenv. For example (update python version and path accordingly):
+```sh
+python3.10 -m pip install --upgrade --target ~/Library/Application\ Support/Binary\ Ninja/python310/site-packages numpy==1.26.4
+```
 
 ### Usage
 
